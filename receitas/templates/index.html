@@ -32,9 +32,8 @@
     <section class="best-receipe-area">
         <div class="container">
             <div class="row">
-                <!-- verificar se receita não é null-->
                 {% if receitas %}
-                {% for receita in receitas  %}
+                {% for receita in receitas %}
                 <!-- Single Best Receipe Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-best-receipe-area mb-30">
@@ -47,9 +46,8 @@
                     </div>
                 </div>
                 {% endfor %}
-                {% else  %}
+                {% else %}
                 {% endif %}
-
             </div>
         </div>
     </section>

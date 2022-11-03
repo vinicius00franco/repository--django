@@ -5,7 +5,6 @@ from datetime import datetime
 
 # Create your models here.
 class Receita(models.Model):
-
     nome_receita = models.CharField(max_length=200)
     ingredientes = models.TextField()
     tempo_preparo = models.IntegerField()

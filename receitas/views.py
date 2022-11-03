@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from .models import Receita
 
-def index(resquest):
+def index(request):
+
     receitas = Receita.objects.all()
+
     dados = {
-        'nome_da_receita': receitas
+        'receitas' : receitas
     }
-    return render(resquest, 'index.html',dados  )
+    return render(request,'index.html', dados)
 
 def receita(request):
-    #renderiza recebendo a requisição e e página
     return render(request, 'receita.html')
