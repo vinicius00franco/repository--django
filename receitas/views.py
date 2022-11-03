@@ -2,11 +2,11 @@ from django.shortcuts import render
 from .models import Receita
 
 def index(resquest):
-    receitas = Receita.objects.all
+    receitas = Receita.objects.all()
     dados = {
-        'nome_das_receitas': receitas
+        'nome_da_receita': receitas
     }
-    return render(resquest, 'index.html',context=dados  )
+    return render(resquest, 'index.html',dados  )
 
 def receita(request):
     #renderiza recebendo a requisição e e página

@@ -14,4 +14,4 @@ class Receita(models.Model):
     date_receita = models.DateTimeField(default=datetime.now,blank=True)
 
 
-Receita.objects
+
