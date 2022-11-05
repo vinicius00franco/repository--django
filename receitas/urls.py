@@ -7,5 +7,5 @@ from . import views
 urlpatterns = [
     #path ( localhosts , nome do arquivo a ser exibido....)
     path('', views.index, name='index'),
-    path('receita', views.receita, name='receita')
+    path('<int:receita_id>', views.receita, name='receita')
 ]
