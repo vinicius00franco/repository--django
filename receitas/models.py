@@ -12,5 +12,8 @@ class Receita(models.Model):
     categoria = models.CharField(max_length=100)
     date_receita = models.DateTimeField(default=datetime.now,blank=True)
 
+class Pessoa(models.Model):
+    nome = models.CharField(max_length=200)
+    email = models.CharField(max_length=200)
 
 
